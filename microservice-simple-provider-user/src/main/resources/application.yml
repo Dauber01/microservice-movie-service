@@ -10,6 +10,8 @@ spring:
     platform: h2
     schema: classpath:schema.sql
     data: classpath:data.sql
+  application:
+    name: microservice-simple-provider-user
 logging:
   level:
     root: INFO
@@ -23,3 +25,9 @@ info:
     jave:
       source: @java.version@
       target: @java.version@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    instance:
+      prefer-ip-address: true
