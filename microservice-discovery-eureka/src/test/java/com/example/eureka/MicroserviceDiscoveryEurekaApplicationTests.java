@@ -1,4 +1,4 @@
-package com.example.microservicediscoveryeureka;
+package com.example.eureka;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

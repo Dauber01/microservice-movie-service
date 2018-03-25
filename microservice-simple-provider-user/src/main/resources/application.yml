@@ -28,6 +28,8 @@ info:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
-    instance:
-      prefer-ip-address: true
+      defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/
+  instance:
+    metadata-map:
+      my-metadata: 我自定义的元数据
+    prefer-ip-address: true

@@ -1,0 +1,14 @@
+/*package com.example.movie.config;
+
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.context.annotation.Configuration;
+
+*//**
+ * @author Lucifer
+ * @do 使用RibbonClient, 为特定name的Ribbon Client自定义配置,使用@RibbonClient的configuration属性,指定Ribbon的配置类
+ * @date 2018/03/25 18:18
+ *//*
+@Configuration
+@RibbonClient(name = "microservice-simple-provider-user", configuration = RibbonConfiguration.class)
+public class TestConfiguration {
+}*/
