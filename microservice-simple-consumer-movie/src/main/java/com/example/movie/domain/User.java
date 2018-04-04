@@ -22,4 +22,6 @@ public class User {
 
     private BigDecimal balance;
 
+
+
 }

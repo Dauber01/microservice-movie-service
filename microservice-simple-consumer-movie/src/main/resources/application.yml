@@ -3,15 +3,18 @@ server:
 spring:
   application:
     name: microservice-simple-consumer-movie
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/
-#  instance:
-#    prefer-ip-address: true
-#microservice-simple-provider-user:
-#  ribbon:
-#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/
+  instance:
+    prefer-ip-address: true
 microservice-simple-provider-user:
   ribbon:
-    listOfServers: localhost:8000,localhost:8001
+   NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+logging:
+  level:
+    com.example.movie.service.UserFeignClient: DEBUG
+#microservice-simple-provider-user:
+#  ribbon:
+#    listOfServers: localhost:8000,localhost:8001
