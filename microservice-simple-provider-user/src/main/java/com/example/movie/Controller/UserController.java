@@ -4,13 +4,10 @@ import com.example.movie.domain.User;
 import com.example.movie.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+//import org.springframework.security.core.GrantedAuthority;
+//import org.springframework.security.core.context.SecurityContextHolder;
+//import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -43,9 +40,9 @@ public class UserController {
         return findOne;
     }*/
 
-    //@GetMapping("/{id}")
     @GetMapping("/")
-    public User findById(@RequestParam long id, @RequestParam long ic){
+    //@PostMapping("/")
+    public User findById(@RequestParam Long id){
         User user = this.userRepository.findOne(id);
         return user;
     }

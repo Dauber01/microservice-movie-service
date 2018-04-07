@@ -1,13 +1,8 @@
 server:
-  port: 8010
+  port: 8020
 spring:
   application:
-    name: microservice-simple-consumer-movie
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    name: microservice-simple-consumer-movie-two
 eureka:
   client:
     service-url:

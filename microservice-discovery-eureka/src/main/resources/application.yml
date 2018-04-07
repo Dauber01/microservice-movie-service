@@ -1,35 +1,36 @@
-spring:
-  application:
-    name: microservice-discovery-eureka
+#spring:
+#  application:
+#    name: microservice-discovery-eureka
 security:
   basic:
     enabled: true
   user:
     name: user
     password: password
----
-spring:
-  profiles: peer1
+#---
+#spring:
+#  profiles: peer1
 server:
   port: 8761
 eureka:
-  instance:
-    hostname: peer1
-    prefer-ip-address: true
+#  instance:
+#    hostname: peer1
+#    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://user:password@peer2:8762/eureka/
+      defaultZone: http://user:password@localhost:8761/eureka/
+      #defaultZone: http://user:password@peer2:8762/eureka/
     register-with-eureka: false
     fetch-registry: false
----
-spring:
-  profiles: peer2
-server:
-  port: 8762
-eureka:
-  instance:
-    hostname: peer2
-    prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://user:password@peer1:8761/eureka/
+#---
+#spring:
+#  profiles: peer2
+#server:
+#  port: 8762
+#eureka:
+#  instance:
+#    hostname: peer2
+#    prefer-ip-address: true
+#  client:
+#    service-url:
+#      defaultZone: http://user:password@peer1:8761/eureka/

@@ -1,4 +1,4 @@
-package com.example.movie.domain;
+/*package com.example.movie.domain;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
@@ -8,11 +8,11 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/**
+*//**
  * @author Lucifer
  * @do security用的user
  * @date 2018/03/26 11:01
- */
+ *//*
 @Data
 public class SecurityUser implements UserDetails{
     private static final long serialVersionUID = 1L;
@@ -61,4 +61,4 @@ public class SecurityUser implements UserDetails{
 
 
 
-}
+}*/

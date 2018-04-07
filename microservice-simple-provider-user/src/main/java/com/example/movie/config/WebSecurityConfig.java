@@ -1,4 +1,4 @@
-package com.example.movie.config;
+/*package com.example.movie.config;
 
 import com.example.movie.service.CustomUserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +12,11 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-/**
+*//**
  * @author Lucifer
  * @do spring security的配置类
  * @date 2018/03/26 10:24
- */
+ *//*
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
@@ -43,4 +43,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
         auth.userDetailsService(this.userDetailsService).passwordEncoder(this.passwordEncoder());
     }
 
-}
+}*/

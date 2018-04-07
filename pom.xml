@@ -12,6 +12,11 @@
 		<module>microservice-simple-provider-user</module>
 		<module>microservice-simple-consumer-movie</module>
 		<module>microservice-discovery-eureka</module>
+		<module>microservice-hystrix-dashboard</module>
+		<module>microservice-simple-consumer-movie-two</module>
+		<module>microservice-hystrix-turbine</module>
+		<module>microservice-gateway-zuul</module>
+		<module>microservice-file-upload</module>
 	</modules>
 
 	<name>microservice-movie-service</name>
