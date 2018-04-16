@@ -17,6 +17,10 @@
 		<module>microservice-hystrix-turbine</module>
 		<module>microservice-gateway-zuul</module>
 		<module>microservice-file-upload</module>
+		<module>microservice-sidecar</module>
+		<module>microservice-config-server</module>
+		<module>microservice-config-client</module>
+		<module>microservice-trace-zipkin-server</module>
 	</modules>
 
 	<name>microservice-movie-service</name>

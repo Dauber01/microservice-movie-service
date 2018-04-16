@@ -19,7 +19,9 @@ microservice-simple-provider-user:
    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
 logging:
   level:
+    root: INFO
     com.example.movie.service.UserFeignClient: DEBUG
+    org.springframework.web.servlet.DispatcherServlet: DEBUG
 #feign:
 #  hystrix:
 #    enabled: false
